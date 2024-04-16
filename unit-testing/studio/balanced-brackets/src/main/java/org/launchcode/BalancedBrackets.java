@@ -25,9 +25,15 @@ public class BalancedBrackets {
             if (ch == '[') {
                 brackets++;
             } else if (ch == ']') {
+                if (brackets == 0) {
+                    // If encountering a closing bracket without a corresponding opening bracket,
+                    // or encountering more closing brackets than opening brackets, return false.
+                    return false;
+                }
                 brackets--;
             }
         }
-        return brackets == 0;
+        // After looping through the string, if brackets == 0, it means all brackets are balanced.
+        return brackets == 0 && !str.isEmpty();
     }
 }
