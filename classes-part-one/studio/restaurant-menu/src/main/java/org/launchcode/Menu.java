@@ -19,8 +19,8 @@ public class Menu {
         menuItems.add(newItem);
     }
 
-    public void removeMenuItem(int indexOfMenuItem) {
-        menuItems.remove(indexOfMenuItem);
+    public void removeMenuItem(MenuItem menuItem) {
+        menuItems.remove(menuItem);
     }
 
     public String getRestaurantName() {

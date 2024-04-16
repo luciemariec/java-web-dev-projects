@@ -73,6 +73,7 @@ public class MenuItem {
                 ", name='" + name + '\'' +
                 ", dateAdded=" + dateAdded +
                 '}';
+
     }
 }
 
